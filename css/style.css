@@ -5,3 +5,45 @@
     padding: 0;
     margin: 0;
 }
+
+/* Main Styling */
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+hr {
+    margin: 0;
+}
+
+/* Utility Classes */
+
+.logo {
+    height: 24px;
+}
+
+/* Bootstrap Classes Utility Overriding */
+
+.active {
+    font-weight: bold;
+    background-color: #f6f6f6;
+}
+
+.nav-link {
+    padding: 8px 24px !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    
+}
