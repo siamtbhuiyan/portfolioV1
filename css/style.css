@@ -108,11 +108,42 @@ a:hover {
     margin: 12px 0;
 }
 
-.certificate-btn {
+.btn {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-right: 12px;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    background-color: #eee;
+    margin-right: 12px;
+}
+
+.project-section {
+    font-size: 24px;
+    padding-top: 96px;
+}
+
+.project-heading {
+    font-size: 48px;
+    padding-bottom: 16px;
+}
+
+.projects {
+    padding: 24px 0;
+}
+
+.project {
+    padding: 36px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.project-details {
+    padding: 12px 48px;
 }
 
 /* Bootstrap Classes Utility Overriding */
