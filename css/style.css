@@ -21,8 +21,8 @@ a {
     text-decoration: none;
 }
 
-hr {
-    margin: 0;
+a:hover {
+    color: #333;
 }
 
 /* Utility Classes */
@@ -31,7 +31,36 @@ hr {
     height: 24px;
 }
 
+.home-section {
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.home-heading {
+    padding-top: 144px;
+}
+
+.home-h1 {
+    font-size: 64px;
+}
+
+.home-text {
+    padding: 64px 0 36px 0;
+}
+
+.contact-link {
+    padding-right: 16px;
+}
+
+.home-contact {
+    padding-bottom: 24px;
+}
+
 /* Bootstrap Classes Utility Overriding */
+
+.navbar {
+    border-bottom: 1px solid #eaeaea;
+}
 
 .active {
     font-weight: bold;
@@ -42,8 +71,16 @@ hr {
     padding: 8px 24px !important;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link:hover,
+.navbar-toggler:hover {
+    background-color: #f6f6f6;
+}
+
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
-    
 }
