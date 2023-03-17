@@ -31,12 +31,13 @@ a:hover {
     height: 24px;
 }
 
-.home-section {
+#home-section {
     font-size: 24px;
-}
+    min-height: calc(100vh - 57px); 
+} 
 
 .home-heading {
-    padding-top: 144px;
+    padding-top: 100px;
 }
 
 .home-h1 {
@@ -55,13 +56,21 @@ a:hover {
     padding-bottom: 24px;
 }
 
-.about-section {
+#about-section {
     font-size: 24px;
     padding-top: 96px;
     width: 100%;
+    min-height: calc(100vh - 57px);
 }
 
 .about-profile {
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+}
+
+
+.profile {
     width: 240px;
     height: 240px;
 }
@@ -80,10 +89,19 @@ a:hover {
     border: 1px solid #eaeaea;
     padding: 36px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
-.about-education {
+#skills-section {
+    font-size: 24px;
+    min-height: calc(100vh - 57px);
+    padding-top: 96px;
+}
+
+.skills-education {
     padding-bottom: 48px;
+    font-size: 20px;
 }
 
 .education-details {
@@ -118,12 +136,12 @@ a:hover {
     margin-right: 12px;
 }
 
-.project-section {
+#project-section {
     font-size: 24px;
     padding-top: 96px;
 }
 
-.project-heading {
+.page-heading {
     font-size: 48px;
     padding-bottom: 16px;
 }
@@ -173,4 +191,70 @@ a:hover {
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .home-heading {
+        padding-top: 50px;
+    }
+
+    .about-profile {
+        padding-top: 16px;
+    }
+
+
+    .skills-education {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #home-section {
+        font-size: 16px;
+    }
+
+    .home-heading {
+        padding-top: 120px;
+    }
+
+    .home-h1 {
+        font-size: 36px;
+    }
+
+    #about-section {
+        font-size: 16px;
+    }
+
+    .about-profile {
+        padding-top: 96px;
+    }
+
+    #skills-section {
+        font-size: 16px;
+    }
+
+    .education-details {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .pe-4 {
+        padding-right: 8px !important;
+    }
+
+    .btn {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .about-text {
+        display: block;
+    }
+
+    #project-section {
+        font-size: 16px;
+    }
 }

@@ -15,12 +15,14 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Link Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <title>Siam T. Bhuiyan</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" class="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,25 +30,28 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                <a class="nav-link" aria-current="page" href="#home-section">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+              <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                <a class="nav-link" href="#about-section">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+              <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                <a class="nav-link" href="#skills-section">Skills</a>
+              </li>
+              <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                <a class="nav-link" href="#project-section">Projects</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-    <div class="container d-flex w-100">
-        <div class="home-section">
+    <div class="container w-100">
+        <div id="home-section">
             <div class="home-heading">
                 <p>Hi, I am ...</p>
-                <h1 class="home-h1">A Tech Nerd,</h1>
                 <h1 class="home-h1">A Dreamer,</h1>
+                <h1 class="home-h1">A Tech Nerd,</h1>
                 <h1 class="home-h1">A Developer</h1>
             </div>
             <div class="home-text">
@@ -64,9 +69,121 @@
                 </a>
             </div>
         </div>
+        <div id="about-section">
+          <h1 class="page-heading">About Me</h1>
+          <div class="about-profile">
+            <div class="profile"><img class="about-img" src="images/profile.jpg" alt=""></div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="about-text">
+              <p>Hi! My name is Siam and I am a Front-end Developer from Bangladesh. I am also currently pursuing a Bachelor's degree in Computer Science and Engineering.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ullam optio repellendus cumque facere quos.</p>
+              <a href="#" class="align-self-center"><span class="btn mt-4">Download CV</span></a>
+            </div>
+          </div>
+        </div>
+        <div id="skills-section">
+          <h1 class="page-heading">Skills</h1>
+          <div class="skills-education">
+            <h2 class="education-heading">Education</h2>
+            <div class="education-details">
+              <div class="education-detail">
+                <span>BSc in CSE</span>
+                <span class="text-muted">
+                  <span>2021 - <span class="invisible">2025</span></span>
+                </span>
+              </div>
+              <div class="education-detail">
+                <span>HSC</span>
+                <span class="text-muted">
+                  <span>2018 - 2020</span>
+                </span> 
+              </div>
+              <div class="education-detail">
+                <span>SSC</span>
+                <span class="text-muted">
+                  <span>2016 - 2018</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="about-certificates">
+            <h2>Certificates</h2>
+            <div class="courses">
+              <div class="course">
+                <p class="fw-bold">CS50</p>
+                <p class="pb-2">This is CS50x , Harvard University's introduction to the intellectual enterprises of computer science and the art of programming for majors and non-majors alike, with or without prior programming experience. An entry-level course taught by David J. Malan, CS50x teaches students how to think algorithmically and solve problems efficiently.</p>
+                <a target="_blank" href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0"><span class="btn">View Course</span></a>
+                <a target="_blank" href="https://drive.google.com/file/d/1JUIoFZa4GTRLgUxo9NpckLqR58q84qd_/view"><span class="btn">View Certificate</span></a>
+              </div>
+              <div class="course">
+                <p class="fw-bold">Full Stack Open</p>
+                <p class="pb-2">Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
+                <a target="_blank" href="https://fullstackopen.com/en/"><span class="btn">View Course</span></a>
+                <a target="_blank" href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/e62bf5039fa32af687623c7a23f24914"><span class="btn">View Certificate</span></a>
+              </div>
+              <div class="course">
+                <p class="fw-bold">devChallenges - Front-end Developer Path</p>
+                <p class="pb-2">Become Front-end Developer by building 8 real-life projects, you can use any Front-end frameworks.</p>
+                <a target="_blank" href="https://devchallenges.io/paths/front-end-developer"><span class="btn">View Challenge</span></a>
+                <a target="_blank" href="https://devchallenges.io/certificates/JGpORkE4IsUUEoVsWzQR"><span class="btn">View Certificate</span></a>
+              </div>
+              <div class="course">
+                <p class="fw-bold">devChallenges - Responsive Web Developer Path</p>
+                <p class="pb-2">Learn and Practice Responsive Web Development by building 8 Websites with given designs.</p>
+                <a target="_blank" href="https://devchallenges.io/paths/responsive-web-developer"><span class="btn">View Challenge</span></a>
+                <a target="_blank" href="https://devchallenges.io/certificates/hA3n9Qza0g5M8XEhSyxw"><span class="btn">View Certificate</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="project-section">
+          <h1 class="page-heading">Projects</h1>
+          <p>Here are a few things that I've built.</p>
+          <div class="projects">
+              <div class="project">
+                  <div class="project-thumbnail">
+                      <img src="/images/jobs.png" alt="" class="thumbnail">
+                  </div>
+                  <div class="project-details">
+                      <h2 class="py-5">Search Jobs</h2>
+                      <p>A job searching platform where users can search and filter jobs based on their needs.</p>
+                      <p>This project was developed using React JS and Tailwind CSS. It uses a fake jobs API to get the jobs information.</p>
+                      <a href="https://github.com/siamtbhuiyan/devChallenges/tree/main/Front-end%20Developer/search-jobs" target="_blank"><span class="btn">Source Code</span></a>
+                      <a href="https://search-jobs-000.netlify.app/" target="_blank"><span class="btn">Live Demo</span></a>
+                  </div>
+              </div>
+              <div class="project">
+                  <div class="project-thumbnail">
+                      <img src="/images/weather.png" alt="" class="thumbnail">
+                  </div>
+                  <div class="project-details">
+                      <h2 class="py-5">Weather App</h2>
+                      <p>A weather forcast app where users can see the current weather and the weather forecast of their desired location.</p>
+                      <p>This project was developed using React JS and Tailwind CSS. It uses openweathermap API to get the weather information.</p>
+                      <a href="https://github.com/siamtbhuiyan/devChallenges/tree/main/Front-end%20Developer/weather-app" target="_blank"><span class="btn">Source Code</span></a>
+                      <a href="https://weather-app-005.netlify.app/" target="_blank"><span class="btn">Live Demo</span></a>
+                  </div>
+              </div>
+              <div class="project">
+                  <div class="project-thumbnail">
+                      <img src="/images/countries.png" alt="" class="thumbnail">
+                  </div>
+                  <div class="project-details">
+                      <h2 class="py-5">Country Quiz App</h2>
+                      <p>A quiz app where your country knowledge is tested with maps and capital questions.</p>
+                      <p>This project was developed using Vue JS and Tailwind CSS. It is also A Progressing Web App. Therefore can also be installed as a mobile app in both Android and iOS.</p>
+                      <a href="https://github.com/siamtbhuiyan/devChallenges/tree/main/Front-end%20Developer/country-quiz" target="_blank"><span class="btn">Source Code</span></a>
+                      <a href="https://country-quiz-000.netlify.app/" target="_blank"><span class="btn">Live Demo</span></a>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!-- JS Import -->
+    <script src="js/index.js"></script>
 </body>
 </html>
