@@ -31,9 +31,9 @@ a:hover {
     height: 24px;
 }
 
-#home-section {
+.home-section {
     font-size: 24px;
-    min-height: calc(100vh - 57px); 
+    height: calc(100vh - 57px); 
 } 
 
 .home-heading {
@@ -56,17 +56,17 @@ a:hover {
     padding-bottom: 24px;
 }
 
-#about-section {
+.about-section {
     font-size: 24px;
-    padding-top: 96px;
+    padding-top: 56px;
     width: 100%;
-    min-height: calc(100vh - 57px);
+    height: calc(100vh - 57px);
 }
 
 .about-profile {
     display: flex;
     justify-content: center;
-    padding-top: 96px;
+    padding-top: 76px;
 }
 
 
@@ -93,10 +93,9 @@ a:hover {
     flex-direction: column;
 }
 
-#skills-section {
+.skills-section {
     font-size: 24px;
-    min-height: calc(100vh - 57px);
-    padding-top: 96px;
+    padding-top: 56px;
 }
 
 .skills-education {
@@ -136,9 +135,9 @@ a:hover {
     margin-right: 12px;
 }
 
-#project-section {
+.project-section {
     font-size: 24px;
-    padding-top: 96px;
+    padding-top: 56px;
 }
 
 .page-heading {
@@ -168,6 +167,7 @@ a:hover {
 
 .navbar {
     border-bottom: 1px solid #eaeaea;
+    z-index: 999;
 }
 
 .active {
@@ -211,7 +211,7 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-    #home-section {
+    .home-section {
         font-size: 16px;
     }
 
@@ -223,7 +223,7 @@ a:hover {
         font-size: 36px;
     }
 
-    #about-section {
+    .about-section {
         font-size: 16px;
     }
 
@@ -231,7 +231,7 @@ a:hover {
         padding-top: 96px;
     }
 
-    #skills-section {
+    .skills-section {
         font-size: 16px;
     }
 
@@ -254,7 +254,7 @@ a:hover {
         display: block;
     }
 
-    #project-section {
+    .project-section {
         font-size: 16px;
     }
 }
