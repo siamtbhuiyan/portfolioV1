@@ -99,8 +99,12 @@ a:hover {
 }
 
 .skills-education {
-    padding-bottom: 48px;
+    padding: 48px 0;
     font-size: 20px;
+}
+
+.progress-section {
+    padding: 8px 0;
 }
 
 .education-details {
@@ -193,6 +197,18 @@ a:hover {
     box-shadow: none;
 }
 
+.progress {
+    height: 5px;
+}
+
+.progress .progress-bar{
+    animation: progress 3s;
+}
+
+@keyframes progress{
+    0% { width:0%; }
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -233,6 +249,11 @@ a:hover {
 
     .skills-section {
         font-size: 16px;
+    }
+
+    .progress-section {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .education-details {
