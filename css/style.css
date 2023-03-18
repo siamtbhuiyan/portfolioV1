@@ -209,6 +209,10 @@ a:hover {
     0% { width:0%; }
 }
 
+.fa-brands {
+    font-size: 32px;
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -277,5 +281,9 @@ a:hover {
 
     .project-section {
         font-size: 16px;
+    }
+
+    .fa-brands {
+        font-size: 24px;
     }
 }
